@@ -21,7 +21,6 @@ body {
 }
 
 div#container {
-    position: relative;
     height: 800px;
     width: 408px;
     border: 7px solid #282828;
