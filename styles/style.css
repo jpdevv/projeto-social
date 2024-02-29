@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+:root {
+    --cormenu: #202124;
+    --corblocos: #3C4043;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cormenu);
+}
+
+div#container {
+    position: relative;
+    height: 800px;
+    width: 408px;
+    border: 7px solid #282828;
+    border-radius: 30px;
+    background-color: black;
+    margin: auto;
+}
