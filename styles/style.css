@@ -17,14 +17,64 @@ body, html {
 }
 
 body {
-    background-color: var(--cormenu);
+    background: white url('../images/fundo.jpg') center no-repeat fixed;
+    background-size: cover;
 }
 
 div#container {
-    height: 800px;
-    width: 408px;
-    border: 7px solid #282828;
-    border-radius: 30px;
-    background-color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white url('../images/screen-lock.png') center no-repeat;
+    background-size: 280px;
+    width: 275px;
+    height: 590px;
+    border-radius: 45px;
+    box-shadow: inset 1px 1px 5px 4px #00000065;
+}
+
+div#celular {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 290px;
+    height: 597px;
+    background: url('../images/celular.png') top no-repeat;
+    background-size: 290px;
+    border-radius: 45px;
+}
+
+div#botao-home {
+    display: block;
+    background-color: #6a6a6a;
+    width: 90px;
+    height: 4px;
+    border-radius: 50px;
     margin: auto;
+    margin-top: 515px;
+}
+
+div#botao-home:hover {
+    transform: translate(0px, -10px);
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+div#hora-data {
+    margin-top: 70px;
+    margin-bottom: -70px;
+    color: #d0cfcf;
+}
+
+div#hora-data > p {
+    text-align: center;
+    font-size: 9px;
+}
+
+div#hora-data > h1 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 40px;
 }
