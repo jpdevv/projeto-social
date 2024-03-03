@@ -8,12 +8,12 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body, html {
     width: 100vw;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -21,12 +21,12 @@ body {
     background-size: cover;
 }
 
-div#container {
+#container {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white url('../images/screen-lock.png') center no-repeat;
+    background: white url('../images/papel-de-parede.png') center no-repeat;
     background-size: 280px;
     width: 275px;
     height: 590px;
@@ -47,34 +47,119 @@ div#celular {
 }
 
 div#botao-home {
-    display: block;
+    position: absolute;
     background-color: #6a6a6a;
     width: 90px;
     height: 4px;
     border-radius: 50px;
-    margin: auto;
-    margin-top: 515px;
+    left: 99px;
+    top: 577px;
 }
 
 div#botao-home:hover {
     transform: translate(0px, -10px);
-    transition: transform .2s;
+    transition: transform .5s;
     cursor: pointer;
 }
 
-div#hora-data {
-    margin-top: 70px;
-    margin-bottom: -70px;
-    color: #d0cfcf;
+div#topo {
+    margin-top: 17px;
+    margin-right: 180px;
+    color: #d1d0d0;
+    margin-bottom: 535px;
 }
 
-div#hora-data > p {
+div#topo > p {
+    position: absolute;
     text-align: center;
-    font-size: 9px;
+    font-size: 11px;
+    top: 17px;
+    left: 36px;
 }
 
-div#hora-data > h1 {
-    font-weight: 600;
+#bateria {
+    margin-top: -19%;
+    margin-left: 241px;
+}
+
+#wifi {
+    margin-top: -1%;
+    margin-left: 215px;
+}
+
+div#pasta {
+    position: absolute;
+    top: 216px;
+    left: 27px;
+    background-color: #ffffff4e;
+    width: 235px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #0000001f;
+}
+
+h1#midia {
+    position: absolute;
+    font-weight: lighter;
+    font-size: 30px;
+    top: 141px;
+    left: 50px;
+    color: #eeeeee;
+}
+
+img {
+    width: 50px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 5px #0000004d;
+}
+
+#insta {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}
+
+#insta > p {
     text-align: center;
-    font-size: 40px;
+}
+
+#git {
+    position: absolute;
+    left: 93px;
+    top: 25px;
+}
+
+#git > p {
+    text-align: center;
+}
+
+#face {
+    position: absolute;
+    left: 165px;
+    top: 25px;
+}
+
+#face > p {
+    text-align: center;
+}
+
+#twtt {
+    position: absolute;
+    left: 20px;
+    top: 112px;
+}
+
+#twtt > p {
+    text-align: center;
+}
+
+#icons p {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    text-shadow: 1px 1px 0px #00000061;
+}
+
+img:hover {
+    transform: translate(0, -4px);
+    transition: transform 300ms;
 }
